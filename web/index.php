@@ -88,9 +88,9 @@
    	            </h2>
    	            <p>
    	                Created using Ruby on Rails and Bootstrap. This site allows users to login, create recipes and upload photos.
-   	                <br/>Users can like other users recipes.
-   	                <br/>Serveal Ruby Gems have been used. Including bcrypt for password authentication, bootstrap for css styling and.
-   	                <br/>I have made use of the model view controller arcitecture and written Unit tests.
+   	                Users can like other users recipes.
+   	                Serveal Ruby Gems have been used. Including bcrypt for password authentication, bootstrap for css styling and.
+   	                I have made use of the model view controller arcitecture and written Unit tests.
    	            </p>
    	            <button onclick="location.href = 'https://stephen-oreilly-test-site.herokuapp.com/';" class="btn btn-success">Check it out!</button>
    	        </div>
