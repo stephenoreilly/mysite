@@ -23,8 +23,8 @@ var clickedTime; var createdTime; var reactionTime;
                    document.getElementById("box").style.borderRadius="0px";
                }
                
-                var top =Math.random()*200;
-                var left = Math.random()*100;
+                var top =Math.random()*($(window).height()-500);
+                var left = Math.random()*($(window).width()-500);
                 document.getElementById("box").style.top=top+"px";
                 document.getElementById("box").style.left=left+"px";
                 document.getElementById("box").style.backgroundColor="white";
