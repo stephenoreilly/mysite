@@ -13,4 +13,7 @@ if($conn == false){
     echo "failed";
     //try to reconnect
 }
+else{
+    echo "connected";
+}
 ?>
