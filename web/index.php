@@ -100,7 +100,7 @@
    	                The XML returned is parsed and the postcode returned to the user.
    	                AJAX allows the postcode to be displayed without refreshing the page.
    	            </p>
-   	            <button onclick="location.href = 'php-projects/postcodefinder.html';" class="btn btn-success">Check it out!</button>
+   	            <button onclick="location.href = 'postcodefinder.html';" class="btn btn-success">Check it out!</button>
    	        </div>
    	        <div class="col-md-4">
    	            <h2>
@@ -112,7 +112,7 @@
    	                By scraping the HTML content returned using Regex a 3 day forecast is provided to the user.
    	                AJAX allows the weather forecast to be displayed without refreshing the page.
    	            </p>
-   	            <button class="btn btn-success" onclick="location.href = 'php-projects/weatherforecaster/weather-forecaster.php';" >Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = 'weather-forecaster.php';" >Check it out!</button>
    	        </div>
    	    </div>
    	    <div class="row project">
