@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <title>Postcode Finder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <style>
+       html,body{
+           height:100%;
+           background-size:100%;
+           }
+       .container{
+           width:100%;
+           height:100%;
+           background-size:cover;
+           background-image:url("city.jpeg");
+           background-position:center;
+           text-align:center;
+           padding-top:150px;
+       }
+       p{
+           padding-top:0;
+           padding-bottom:0;
+       }
+       input{
+           margin:0;
+       }
+       button{
+           margin-top:20px;
+       }
+       .alert {
+           position:relative;
+           display:none;
+       }
+       .whiteBackground{
+         background-color:rgba(20, 20, 20, .7);
+         padding: 20px;
+         color: white;
+         border-radius:20px;
+       }
+    </style>
+</head>
+
+<body>
+    <script> 
+    $(function(){
+      $("#logo").load("navbar.html"); 
+    });
+    </script> 
+
+     <div id="logo"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 center whiteBackground">
+                <h1 class="center">Post Code Finder</h1>
+                <p class="lead center">Enter any address to find the postcode.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="address" id="address" placeholder="Eg. 63 Fake Street, Fake Town..."/>
+                        <button id="findMyPostcode" class="btn btn-success btn-lg">Find Postcode</button>
+                        
+                    </div>
+                </form>
+                <div class="alert alert-success success">Success!</div>
+                <div class="alert alert-danger fail">Could not a postcode for that address. Please try again.</div>
+                <div class="alert alert-danger serverError">Could not connect to server</div>
+            </div>
+        </div>
+    </div>
+<script>
+    var result=0;
+    $('#findMyPostcode').click(function(event){
+        event.preventDefault();
+        $(".alert").hide();
+        var result='';
+          $.ajax({
+                type: "GET",
+                url: "https://maps.googleapis.com/maps/api/geocode/xml?address="+encodeURIComponent($('#address').val())+"&key=AIzaSyCFQ_stOhRksiWcjol68vA9WbMQr-K9-GI",
+                dataType: "xml",
+                success: processXML,
+                error: errorMessage
+                    
+            });
+            function errorMessage(){
+                $(".serverError").fadeIn(); 
+            };
+            function processXML(xml){
+                  $(xml).find("address_component").each(function(){
+                    if($(this).find("type").text().indexOf("postal_code") > -1){
+                        result="The postcode you need is "+$(this).find("long_name").text();
+                        $(".success").html(result).fadeIn();
+                    };
+                    
+                  });
+                if(result==''){
+                   $(".fail").fadeIn(); 
+                }
+            }
+                
+            
+    })
+</script> 
+</body>
+</html>
