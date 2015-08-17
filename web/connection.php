@@ -8,6 +8,7 @@
     
     $conn = new mysqli($server, $username, $password, $db);
     $conn = mysql_connect('localhost','username','password');
+    print_r($conn);
 //(...)
 if($conn == false){
     echo "failed";
