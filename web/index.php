@@ -100,7 +100,7 @@
    	                The XML returned is parsed and the postcode returned to the user.
    	                AJAX allows the postcode to be displayed without refreshing the page.
    	            </p>
-   	            <button onclick="location.href = 'php-projects/postcodefinder.html';" class="btn btn-success">Check it out!</button>
+   	            <button onclick="location.href = '/php-projects/postcodefinder.html';" class="btn btn-success">Check it out!</button>
    	        </div>
    	        <div class="col-md-4">
    	            <h2>
