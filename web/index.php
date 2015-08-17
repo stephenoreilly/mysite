@@ -126,7 +126,7 @@
    	                Their details are then stored in a MySQL database.
    	                The user's diary entries are stored in the database as they type using AJAX.
    	            </p>
-   	            <button class="btn btn-success" onclick="location.href = 'php-projects/diary/index.php';">Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = 'diary.php';">Check it out!</button>
    	        </div>
    	        <div class="col-md-4">
    	            <h2>
@@ -136,7 +136,7 @@
    	                This is a code editor where the user can enter HTML/CSS and JS and click the run button to display the results of their code.
    	                This is created using JQuery. Elements are updated as the user enters code and the results are updated to the iframe when the Run button is clicked.
    	            </p>
-   	            <button class="btn btn-success" onclick="location.href = 'css-js-and-jquery-projects/JQuery/codeplayer.html';">Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = 'codeplayer.html';">Check it out!</button>
    	        </div>
        
            <div class="col-md-4">
@@ -149,7 +149,7 @@
                    A new box is created after the user clicks on the shape and a wait time has passed.
                    The reaction time is displayed to the user.
                </p>
-               <button onclick="location.href = 'css-js-and-jquery-projects/JS/reaction_tester.html';" class="btn btn-success">Check it out!</button>
+               <button onclick="location.href = 'reaction_tester.html';" class="btn btn-success">Check it out!</button>
            </div>
    	    </div>
    	</div>
