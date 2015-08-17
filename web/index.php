@@ -80,7 +80,7 @@
    	            <p>
    	                Created using Ruby on Rails and Bootstrap. This site allows users to login, create recipes and upload photos.
    	                <br/>Users can like other users recipes.
-   	                <br/>Serveal Ruby Gems have been used. Including bcrypt for password authentication, bootstrap for css styling and...
+   	                <br/>Serveal Ruby Gems have been used. Including bcrypt for password authentication, bootstrap for css styling and.
    	                <br/>I have made use of the model view controller arcitecture and written Unit tests.
    	            </p>
    	            <button onclick="location.href = 'https://stephen-oreilly-test-site.herokuapp.com/';" class="btn btn-success">Check it out!</button>
@@ -95,7 +95,7 @@
    	                The XML returned is parsed and the postcode returned to the user.
    	                AJAX allows the postcode to be displayed without refreshing the page.
    	            </p>
-   	            <button onclick="location.href = '../php-projects/postcodefinder.html';" class="btn btn-success">Check it out!</button>
+   	            <button onclick="location.href = '/php-projects/postcodefinder.html';" class="btn btn-success">Check it out!</button>
    	        </div>
    	        <div class="col-md-4">
    	            <h2>
@@ -107,7 +107,7 @@
    	                By scraping the HTML content returned using Regex a 3 day forecast is provided to the user.
    	                AJAX allows the weather forecast to be displayed without refreshing the page.
    	            </p>
-   	            <button class="btn btn-success" onclick="location.href = '../php-projects/wetherforecaster/weather-forecaster.php';" >Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = '/php-projects/wetherforecaster/weather-forecaster.php';" >Check it out!</button>
    	        </div>
    	    </div>
    	    <div class="row project">
@@ -131,7 +131,7 @@
    	                This is a code editor where the user can enter HTML/CSS and JS and click the run button to display the results of their code.
    	                This is created using JQuery. Elements are updated as the user enters code and the results are updated to the iframe when the Run button is clicked.
    	            </p>
-   	            <button class="btn btn-success" onclick="location.href = '../css-js-and-jquery-projects/JQuery/codeplayer.html';">Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = '/css-js-and-jquery-projects/JQuery/codeplayer.html';">Check it out!</button>
    	        </div>
        
            <div class="col-md-4">
@@ -144,7 +144,7 @@
                    A new box is created after the user clicks on the shape and a wait time has passed.
                    The reaction time is displayed to the user.
                </p>
-               <button onclick="location.href = '../css-js-and-jquery-projects/JS/reaction_tester.html';" class="btn btn-success">Check it out!</button>
+               <button onclick="location.href = '/css-js-and-jquery-projects/JS/reaction_tester.html';" class="btn btn-success">Check it out!</button>
            </div>
    	    </div>
    	</div>
