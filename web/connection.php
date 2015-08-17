@@ -6,11 +6,10 @@
     $password = $url["pass"];
     $db = substr($url["path"], 1);
     
-    $conn = new mysqli($server, $username, $password, $db);
-    $conn = mysql_connect('localhost','username','password');
+    $link = new mysqli($server, $username, $password, $db);
     print_r($conn);
 //(...)
-if($conn == false){
+if($link == false){
     echo "failed";
     //try to reconnect
 }
@@ -29,5 +28,5 @@ else{
     //    $query="INSERT INTO users2 (name, email, password)
     //VALUES ('Beth','example@example.com','');";
 
-    mysqli_query($conn,$query);
+    mysqli_query($link,$query);
 ?>
