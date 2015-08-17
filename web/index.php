@@ -17,7 +17,7 @@
     	}
     	#topContainer{
     	    
-    		background-image:url("home2.jpeg");
+    		background-image:url("home3.jpg");
     		background-size:cover;
     		width:100%;
     		margin:0;
@@ -51,19 +51,24 @@
 </head>
 
 <body>
+    <script> 
+    $(function(){
+      $("#includedContent").load("navbar.html"); 
+    });
+    </script> 
     <div class="navbar navbar-default" >
     	<div class="container">
     		
-    		<a class="navbar-brand">Stephen O'Reilly</a>
+    		<div id="includedContent"></div>
     	</div>
     </div>
    	
    	<div class="contentContainer" id="topContainer">
    	    <div class="row">
    	        <div class="topRow col-md-6 col-md-offset-3">
-   	            <h1>Hello world</h1>
-   	            <p class="lead">Take a look a some of my recent projects</p>
-   	            <p>I have been learing different web technologies and am currently looking for a job as a software engineer</p>
+   	            <h1>Welcome</h1>
+   	            <h2 class="lead">Scroll down to take a look a some of my recent projects</h2>
+   	            <h3 class="lead">I have been learing different web technologies and am currently looking for a job as a web developer</h3>
    	        </div>
    	    </div>
    		
@@ -95,7 +100,7 @@
    	                The XML returned is parsed and the postcode returned to the user.
    	                AJAX allows the postcode to be displayed without refreshing the page.
    	            </p>
-   	            <button onclick="location.href = '/php-projects/postcodefinder.html';" class="btn btn-success">Check it out!</button>
+   	            <button onclick="location.href = 'php-projects/postcodefinder.html';" class="btn btn-success">Check it out!</button>
    	        </div>
    	        <div class="col-md-4">
    	            <h2>
@@ -107,7 +112,7 @@
    	                By scraping the HTML content returned using Regex a 3 day forecast is provided to the user.
    	                AJAX allows the weather forecast to be displayed without refreshing the page.
    	            </p>
-   	            <button class="btn btn-success" onclick="location.href = '/php-projects/wetherforecaster/weather-forecaster.php';" >Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = 'php-projects/weatherforecaster/weather-forecaster.php';" >Check it out!</button>
    	        </div>
    	    </div>
    	    <div class="row project">
@@ -121,7 +126,7 @@
    	                Their details are then stored in a MySQL database.
    	                The user's diary entries are stored in the database as they type using AJAX.
    	            </p>
-   	            <button class="btn btn-success">Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = 'php-projects/diary/index.php';">Check it out!</button>
    	        </div>
    	        <div class="col-md-4">
    	            <h2>
@@ -131,7 +136,7 @@
    	                This is a code editor where the user can enter HTML/CSS and JS and click the run button to display the results of their code.
    	                This is created using JQuery. Elements are updated as the user enters code and the results are updated to the iframe when the Run button is clicked.
    	            </p>
-   	            <button class="btn btn-success" onclick="location.href = '/css-js-and-jquery-projects/JQuery/codeplayer.html';">Check it out!</button>
+   	            <button class="btn btn-success" onclick="location.href = 'css-js-and-jquery-projects/JQuery/codeplayer.html';">Check it out!</button>
    	        </div>
        
            <div class="col-md-4">
@@ -144,7 +149,7 @@
                    A new box is created after the user clicks on the shape and a wait time has passed.
                    The reaction time is displayed to the user.
                </p>
-               <button onclick="location.href = '/css-js-and-jquery-projects/JS/reaction_tester.html';" class="btn btn-success">Check it out!</button>
+               <button onclick="location.href = 'css-js-and-jquery-projects/JS/reaction_tester.html';" class="btn btn-success">Check it out!</button>
            </div>
    	    </div>
    	</div>
