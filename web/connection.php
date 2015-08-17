@@ -17,4 +17,17 @@ if($conn == false){
 else{
     echo "connected";
 }
+
+  $query="CREATE TABLE users2 (
+        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(30) NOT NULL,
+        email VARCHAR(50),
+        password VARCHAR(50),
+        diary TEXT,
+        reg_date TIMESTAMP
+            )";
+    //    $query="INSERT INTO users2 (name, email, password)
+    //VALUES ('Beth','example@example.com','');";
+
+    mysqli_query($conn,$query);
 ?>
