@@ -71,14 +71,20 @@
      }
  </style>
  </head>
+ <script> 
+    $(function(){
+      $("#includedContent").load("navbar.html"); 
+    });
+ </script> 
+    
  <body data-spy="scroll" data-target=".navbar-collapse">
     
      <div class="navbar navbar-default navbar-fixed-top">
          <div class="container">
              <div class="navbar-header pull-left">
+                 <div id="includedContent"></div>
                  <a class="navbar-brand">Secret Diary</a>
              </div>
-        
          <div class="pull-right">
              <form class="navbar-form navbar-right" method="post">
                  <div class="form-group">
