@@ -68,7 +68,7 @@
    	        <div class="topRow col-md-6 col-md-offset-3">
    	            <h1>Welcome</h1>
    	            <h2 class="lead">Scroll down to take a look a some of my recent projects</h2>
-   	            <h3 class="lead">I have been learing different web technologies and am currently looking for a job as a web developer</h3>
+   	            <h3 class="lead">I have been learning different web technologies and am currently looking for a job as a web developer</h3>
    	        </div>
    	    </div>
    		
