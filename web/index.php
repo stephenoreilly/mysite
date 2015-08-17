@@ -89,7 +89,7 @@
    	            <p>
    	                Created using Ruby on Rails and Bootstrap. This site allows users to login, create recipes and upload photos.
    	                Users can like other users recipes.
-   	                Serveal Ruby Gems have been used. Including bcrypt for password authentication, bootstrap for css styling and.
+   	                Several Ruby Gems have been used. Including bcrypt for password authentication and bootstrap for css styling.
    	                I have made use of the model view controller arcitecture and written Unit tests.
    	            </p>
    	            <button onclick="location.href = 'https://stephen-oreilly-test-site.herokuapp.com/';" class="btn btn-success">Check it out!</button>
@@ -112,7 +112,7 @@
    	            </h2>
    	            <p>
    	                The user enters a city and the 3 day wether forecast for that city is returned.
-   	                Created using PHP and Javascript a query is made using a GET reguest appended to the URL for http://www.weather-forecast.com/
+   	                Created using PHP and Javascript a query is made using a GET request appended to the URL for http://www.weather-forecast.com/
    	                By scraping the HTML content returned using Regex a 3 day forecast is provided to the user.
    	                AJAX allows the weather forecast to be displayed without refreshing the page.
    	            </p>
@@ -149,7 +149,7 @@
                </h2>
                <p>
                    This game tests the users reactions. Circles and squares appear on screen and the user must click on then as quickly as they can.
-                   Created using JavaScript boxs and cirlces are randomally created on the fly and given a random background color
+                   Created using JavaScript boxs and cirlces are randomly created on the fly and given a random background color.
                    A new box is created after the user clicks on the shape and a wait time has passed.
                    The reaction time is displayed to the user.
                </p>
