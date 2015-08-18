@@ -1,6 +1,6 @@
 <?php
-    
-    require "twitteroauth-master/autoload.php";
+    $connection ="test";
+    require "autoload.php";
 
     use Abraham\TwitterOAuth\TwitterOAuth;
     
@@ -10,12 +10,5 @@
     $accesssecret='502BJeshORJRouCsfJc4GKIkRFGZRfrX0XXP8bUumOAmi';
     
     $connection = new TwitterOAuth($apikey,$apisecret,$accesstoken,$accesssecret);
-    $statuses = $connection->get('statuses/home_timeline',array("count"=>10));
-    foreach($statuses as $tweet){
-        $favourite=$tweet->retweeted_status->favorite_count;
-        if($favourite>2){
-            $embed=$connection->get('statuses/oembed', array('id'=>$tweet->id));
-            echo($embed->html);
-        }
-    }
+    echo $connection;
 ?>

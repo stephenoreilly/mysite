@@ -155,6 +155,15 @@
                </p>
                <button onclick="location.href = 'reaction_tester.html';" class="btn btn-success">Check it out!</button>
            </div>
+            <div class="col-md-4">
+               <h2>
+                   Twitter feed
+               </h2>
+               <p>
+                   Using the twitter API the top 10 tweets that have a favourite rating of greater than 2 are displayed using the oembed twitter funcitonality.
+               </p>
+               <button onclick="location.href = 'http://twitter-api-oauth.herokuapp.com/';" class="btn btn-success">Check it out!</button>
+           </div>
    	    </div>
    	</div>
 <script>
