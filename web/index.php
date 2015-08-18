@@ -160,7 +160,7 @@
                    Twitter feed
                </h2>
                <p>
-                   Using the twitter API the top 10 tweets that have a favourite rating of greater than 2 are displayed using the oembed twitter funcitonality.
+                   Using the twitter API the top 10 tweets that have a favourite rating of greater than 2 are displayed using oembed.
                </p>
                <button onclick="location.href = 'http://twitter-api-oauth.herokuapp.com/';" class="btn btn-success">Check it out!</button>
            </div>
