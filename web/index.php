@@ -165,6 +165,15 @@
                </p>
                <button onclick="location.href = 'http://twitter-api-oauth.herokuapp.com/';" class="btn btn-success">Check it out!</button>
            </div>
+           <div class="col-md-4">
+               <h2>
+                   My Shop
+               </h2>
+               <p>
+                   Using Smarty PHP and MySQL this site allows users to login and add items to their shopping cart.
+               </p>
+               <button onclick="location.href = 'https://smartydemo.herokuapp.com/';" class="btn btn-success">Check it out!</button>
+           </div>
    	    </div>
    	</div>
 <script>
