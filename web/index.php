@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <?php include("wakeup.php")?>
     <title>Stephen O'Reilly</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     
