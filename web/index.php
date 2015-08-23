@@ -170,7 +170,7 @@
                    My Shop
                </h2>
                <p>
-                   Using Smarty PHP and MySQL this site allows users to login and add items to their shopping cart.
+                   Using Smarty PHP and MySQL this site allows users to login/register and add items to their shopping cart.
                </p>
                <button onclick="location.href = 'https://smartydemo.herokuapp.com/';" class="btn btn-success">Check it out!</button>
            </div>
